@@ -6,7 +6,6 @@ import { Badge } from "../ui/badge";
 function ShoppingProductTile({
   product,
   handleGetProductDetails,
-  handleAddtoCart,
 }) {
   return (
     <Card className="w-full max-w-sm mx-auto">
@@ -62,14 +61,7 @@ function ShoppingProductTile({
           <Button className="w-full opacity-60 cursor-not-allowed">
             Out Of Stock
           </Button>
-        ) : (
-          <Button
-            onClick={() => handleAddtoCart(product?._id, product?.totalStock)}
-            className="w-full"
-          >
-            Add to cart
-          </Button>
-        )}
+        ) : null}
       </CardFooter>
     </Card>
   );

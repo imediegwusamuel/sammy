@@ -218,11 +218,11 @@ export const addressFormControls = [
     placeholder: "Enter your city",
   },
   {
-    label: "Size",
+    label: "Pincode",
     name: "pincode",
     componentType: "input",
     type: "text",
-    placeholder: "Enter your Size",
+    placeholder: "Enter your pincode",
   },
   {
     label: "Phone",
